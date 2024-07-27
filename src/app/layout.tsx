@@ -13,9 +13,9 @@ const Layout = ({children}: Props) => {
         <head>
             <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet" />
         </head>
-        <body className='flex fixed flex-col w-[100vw] min-h-[100vh]'>
+        <body className='flex fixed flex-col w-[100vw] h-[100vh]'>
             <Navbar />
-            <main>{children}</main>
+            <div className='w-[100vw] h-[80vh] overflow-y-scroll'>{children}</div>
             <Footer />
         </body>
       </html>        
