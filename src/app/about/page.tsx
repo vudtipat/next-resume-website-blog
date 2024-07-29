@@ -1,7 +1,9 @@
+"use client";
+
 import React from 'react'
 import Timeline from '../components/Timeline'
 import LabeledContainer from '../components/LabeledContainer';
-
+import { motion } from 'framer-motion';
 
 const timelineData: TimelineData[] = [
   {
@@ -34,18 +36,39 @@ const timelineData: TimelineData[] = [
   }
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
 export default function Page() {
   return (
     <div className="flex flex-col items-center h-[100%] py-8 px-12">
-      <p className='font-bold text-2xl border-b-4 border-[#A91D3A]/90'>About Me</p>
-      <div className='w-[50%] mt-12 border-b border-[#A91D3A]/30'>
+      <motion.p 
+        className='font-bold text-2xl border-b-4 border-[#A91D3A]/90' 
+        initial="hidden"
+        whileInView="visible"
+        variants={containerVariants}>About Me
+      </motion.p>
+
+      <motion.div 
+        className='w-[50%] mt-12 border-b border-[#A91D3A]/30'
+        initial="hidden"
+        whileInView="visible"
+        variants={containerVariants}
+      >
         <p className='font-bold text-xl'>Introduce</p>
         <p className='my-2 px-7'>Hi !, My name is Vudtipat Saishana. My nick name is Tum. You can call me Tum. 
           I'm passionate software developer base in Thailand.
           I have a deep love for learning new programming language and new framework and new trend that 
           I interested and I strive to bring innovation and creativity into everything I do. </p>
-      </div>
-      <div className='w-[50%] mt-4 border-b border-[#A91D3A]/30'>
+      </motion.div>
+      <motion.div  
+        className='w-[50%] mt-4 border-b border-[#A91D3A]/30'
+        initial="hidden"
+        whileInView="visible"
+        variants={containerVariants}
+      >
         <p className='font-bold text-xl'>My Journey</p>
         <p className='my-2 px-7'>I started my Journey in software development when I was a kid, 
           I like to play computer game and surf the internet then I want to know how computer work. After that, 
@@ -54,14 +77,24 @@ export default function Page() {
           After I graduated with a bachelor's degree, I applied to work at Krungsri nimble as a Software Developer. 
           I will push myself to continually learn and grow.
         </p>
-      </div>
-      <div className='w-[50%] mt-4 border-b border-[#A91D3A]/30'>
+      </motion.div>
+      <motion.div 
+        className='w-[50%] mt-4 border-b border-[#A91D3A]/30'
+        initial="hidden"
+        whileInView="visible"
+        variants={containerVariants}
+      >
         <p className='font-bold text-xl'>My Life Philosophy</p>
         <p className='my-2 px-7'>I believe in living a life driven by passion, purpose, and continuous growth. 
           To me, every day is an opportunity to learn something new, to be better than I was yesterday, and to contribute positively to the world around me. 
         </p>
-      </div>
-      <div className='w-[50%] mt-4 border-b border-[#A91D3A]/30'>
+      </motion.div>
+      <motion.div 
+        className='w-[50%] mt-4 border-b border-[#A91D3A]/30'
+        initial="hidden"
+        whileInView="visible"
+        variants={containerVariants}
+      >
         <p className='font-bold text-xl'>My Educations</p>
         <div className='px-7 mb-2'> 
           <div className='col-span-1 mt-4 flex flex-col'>
@@ -77,12 +110,22 @@ export default function Page() {
             <p className='font-light text-sm'>2011 - 2017</p>
           </div>
         </div>
-      </div>
-      <div className='w-[50%] mt-4 border-b border-[#A91D3A]/30'>
+      </motion.div>
+      <motion.div 
+        className='w-[50%] mt-4 border-b border-[#A91D3A]/30'
+        initial="hidden"
+        whileInView="visible"
+        variants={containerVariants}
+      >
         <p className='font-bold text-xl'>My Work Experience</p>
         <Timeline timelineData={timelineData}/>
-      </div>    
-      <div className='w-[50%] mt-4 border-b border-[#A91D3A]/30'>
+      </motion.div>    
+      <motion.div 
+        className='w-[50%] mt-4 border-b border-[#A91D3A]/30'
+        initial="hidden"
+        whileInView="visible"
+        variants={containerVariants}
+      >
         <p className='font-bold text-xl'>My Skills</p>
         <LabeledContainer cardTitle='Programming language'>
           <div className='grid grid-cols-4 gap-5 py-5'>
@@ -212,11 +255,16 @@ export default function Page() {
             </div>
           </div>
         </LabeledContainer>
-      </div> 
-      <div className='w-[50%] mt-4 border-b border-[#A91D3A]/30'>
+      </motion.div> 
+      <motion.div 
+        className='w-[50%] mt-4 border-b border-[#A91D3A]/30'
+        initial="hidden"
+        whileInView="visible"
+        variants={containerVariants}
+      >
         <p className='font-bold text-xl'>My Projects</p>
         <p className='my-2'></p>
-      </div>     
+      </motion.div>     
     </div>
   )
 }
