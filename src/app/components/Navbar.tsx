@@ -27,7 +27,7 @@ const Navbar = () => {
             </div>
             {
                 showMenu ? (
-                    <div className='flex flex-col absolute w-[100%] top-[10vh] bg-white md:hidden'>
+                    <div className='flex flex-col absolute w-[100%] top-[10vh] z-50 bg-white md:hidden shadow-lg'>
                         <Link className='py-[14px] px-4 no-underline text-[#333] font-extrabold border-b border-green-900/10' onClick={() => setShowMenu(!showMenu)} href="/">Home</Link>
                         <Link className='py-[14px] px-4 no-underline text-[#333] font-extrabold border-b border-green-900/10' onClick={() => setShowMenu(!showMenu)} href="/about">About Me</Link>
                         <Link className='py-[14px] px-4 no-underline text-[#333] font-extrabold border-b border-green-900/10' onClick={() => setShowMenu(!showMenu)} href="/blog">Blog</Link>

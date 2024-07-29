@@ -43,7 +43,7 @@ const containerVariants = {
 
 export default function Page() {
   return (
-    <div className="flex flex-col items-center h-[100%] py-8 px-12">
+    <div className="flex flex-col items-center h-[100%] py-8 px-0">
       <motion.p 
         className='font-bold text-2xl border-b-4 border-[#A91D3A]/90' 
         initial="hidden"
@@ -52,7 +52,7 @@ export default function Page() {
       </motion.p>
 
       <motion.div 
-        className='w-[50%] mt-12 border-b border-[#A91D3A]/30'
+        className='w-[90%] min-[770px]:w-[50%] mt-12 border-b border-[#A91D3A]/30'
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
@@ -64,7 +64,7 @@ export default function Page() {
           I interested and I strive to bring innovation and creativity into everything I do. </p>
       </motion.div>
       <motion.div  
-        className='w-[50%] mt-4 border-b border-[#A91D3A]/30'
+        className='w-[90%] min-[770px]:w-[50%] mt-4 border-b border-[#A91D3A]/30'
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
@@ -79,7 +79,7 @@ export default function Page() {
         </p>
       </motion.div>
       <motion.div 
-        className='w-[50%] mt-4 border-b border-[#A91D3A]/30'
+        className='w-[90%] min-[770px]:w-[50%] mt-4 border-b border-[#A91D3A]/30'
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
@@ -90,7 +90,7 @@ export default function Page() {
         </p>
       </motion.div>
       <motion.div 
-        className='w-[50%] mt-4 border-b border-[#A91D3A]/30'
+        className='w-[90%] min-[770px]:w-[50%] mt-4 border-b border-[#A91D3A]/30'
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
@@ -112,7 +112,7 @@ export default function Page() {
         </div>
       </motion.div>
       <motion.div 
-        className='w-[50%] mt-4 border-b border-[#A91D3A]/30'
+        className='w-[90%] min-[770px]:w-[50%] mt-4 border-b border-[#A91D3A]/30'
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
@@ -121,14 +121,14 @@ export default function Page() {
         <Timeline timelineData={timelineData}/>
       </motion.div>    
       <motion.div 
-        className='w-[50%] mt-4 border-b border-[#A91D3A]/30'
+        className='w-[90%] min-[770px]:w-[50%] mt-4 border-b border-[#A91D3A]/30'
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
       >
         <p className='font-bold text-xl'>My Skills</p>
         <LabeledContainer cardTitle='Programming language'>
-          <div className='grid grid-cols-4 gap-5 py-5'>
+          <div className='grid grid-cols-2 2xl:grid-cols-4 gap-5 py-5'>
             <div className='flex flex-col items-center justify-end'>
               <img src={'python.png'} alt="Python" width={70}/>
               <p className='font-semibold'>Python</p>
@@ -156,7 +156,7 @@ export default function Page() {
           </div>
         </LabeledContainer>
         <LabeledContainer cardTitle='Frontend'>
-          <div className='grid grid-cols-4 gap-5 py-5'>
+          <div className='grid grid-cols-2 2xl:grid-cols-4 gap-5 py-5'>
             <div className='flex flex-col items-center justify-end'>
               <img src={'react.webp'} alt="React.js" width={70}/>
               <p className='font-semibold'>React.js</p>
@@ -180,7 +180,7 @@ export default function Page() {
           </div>
         </LabeledContainer>
         <LabeledContainer cardTitle='Backend'>
-          <div className='grid grid-cols-4 gap-5 py-5'>
+          <div className='grid grid-cols-2 2xl:grid-cols-4 gap-5 py-5'>
             <div className='flex flex-col items-center justify-end'>
               <img src={'dotnet.png'} alt="dotnet" width={70}/>
               <p className='font-semibold'>.Net</p>
@@ -200,7 +200,7 @@ export default function Page() {
           </div>
         </LabeledContainer>
         <LabeledContainer cardTitle='Database'>
-          <div className='grid grid-cols-4 gap-5 py-5'>
+          <div className='grid grid-cols-2 2xl:grid-cols-4 gap-5 py-5'>
             <div className='flex flex-col items-center justify-end'>
               <img src={'mssql.png'} alt="mssql" width={70}/>
               <p className='font-semibold'>MS SQL Server</p>
@@ -224,7 +224,7 @@ export default function Page() {
           </div>
         </LabeledContainer>
         <LabeledContainer cardTitle='Other'>
-          <div className='grid grid-cols-4 gap-5 py-5'>
+          <div className='grid grid-cols-2 2xl:grid-cols-4 gap-5 py-5'>
             <div className='flex flex-col items-center justify-end'>
               <img src={'confluence.png'} alt="confluence" width={70}/>
               <p className='font-semibold'>Confluence</p>
@@ -257,7 +257,7 @@ export default function Page() {
         </LabeledContainer>
       </motion.div> 
       <motion.div 
-        className='w-[50%] mt-4 border-b border-[#A91D3A]/30'
+        className='w-[90%] min-[770px]:w-[50%] mt-4 border-b border-[#A91D3A]/30'
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
