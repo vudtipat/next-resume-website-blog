@@ -20,7 +20,7 @@ const TimelineItem = ({ timelineData }: Props) => {
         <h3 className="font-extrabold text-xl mt-2">{timelineData.company_name}</h3>
         <h4 className="font-bold text-lg">{timelineData.role}</h4>
         <p>{timelineData.description}</p>
-        {timelineData.jobResponsibility?.map(data => <li>{data}</li>)}
+        {timelineData.jobResponsibility?.map((data, idx) => <li key={idx}>{data}</li>)}
         <span className="w-5 h-5 bg-[#A91D3A] rounded-[50%] absolute left-[-10px] top-5"/>
       </div>
     </motion.div>

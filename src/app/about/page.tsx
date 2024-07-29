@@ -36,9 +36,61 @@ const timelineData: TimelineData[] = [
   }
 ];
 
+const myProject: MyProjectModel[] = [
+  {
+    copanyName: "Plastic Omnium Auto Inergy",
+    projectName: "Counting Part Application (.Net, MSSQL)",
+    projectDetail: "It is a Windows application for logistics departments to count materials by validate with orders number using barcode scanners and weight scale to count.",
+    myResponsibility: [
+      "Get business requirement from Logistic team.",
+      "Design ui and database schema.",
+      "Develop and testing windows application according business requirement.",
+      "Develop windows application to read input from weight scale and barcode scanner to process calulated weight and cross check with database"
+    ]
+  },
+  {
+    copanyName: "Krungsri Nimble",
+    projectName: "Marketplace (React.js, .Net, Xamarin, MSSQL)",
+    projectDetail: "It is a platform on kma-app (Krungsri mobile application) for Krungsri Bank customers to purchase products such as pizza, movie tickets, electrical appliances, etc. and pay with Krungsri Bank accounts.",
+    myResponsibility: [
+      "Worked as the squad to develop new features according business requirement.",
+      "Coodinated with product owner and system analysis and 3'rd party and tester.",
+      "Develop mobile app for new feature integrated with new pather via webview and use webview javascript interface(javascript injection) to process payment with krungsri bank",
+      "Develop mobile app according business requirement from product owner and system analysis.",
+      "Develop legacy service and squad's microservice to support new partner and new business requirement from product owner and system analysis.",
+      "Maintainance and Improvement microservice and lagacy services.",
+      "Investigate production issues and resolve problems and defects in areas related to my responsibility."
+    ]
+  },
+  {
+    copanyName: "Krungsri Nimble",
+    projectName: "Social Commerce (Angular.js, Java Spring boot, Postgres)",
+    projectDetail: "It is a platform for store owners who are Krungsri Bank customers to create Qr codes for payments and send them to their customers via Social Media channels such as Messenger, Line, etc.",
+    myResponsibility: [""]
+  },
+  {
+    copanyName: "Krungsri Nimble",
+    projectName: "KMA Data Retention (.Net, MSSQL)",
+    projectDetail: "It is a console application and task scheduler that is set to run every day. It eliminates sensitive customer information such as ID card numbers, first and last names, dates of birth that have been canceled using KMA for more than 10 years, and the results will be emailed to relevant stakeholders.",
+    myResponsibility: [""]
+  },
+  {
+    copanyName: "Krungsri Nimble",
+    projectName: "Amlo Cooperative Transactions Report (.Net, MSSQL)",
+    projectDetail: "It is a console application and task scheduler that is set to run every day. Collect suspicious transactions of withdrawals, transfers related to cooperatives. and format it to send to Amlo (Anti-Money Laundering Office).",
+    myResponsibility: [""]
+  },
+  {
+    copanyName: "Krungsri Nimble",
+    projectName: "KMA Overhual (Xamarin, .Net, MSSQL)",
+    projectDetail: "It is a project that will overhaul kma-app by ux/ui redesign and rearchiture of services for improve performance and easier to maintain",
+    myResponsibility: [""]
+  },
+]
+
 const containerVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  visible: { opacity: 1, y: 0, transition: { duration: 2 } },
 };
 
 export default function Page() {
@@ -63,6 +115,7 @@ export default function Page() {
           I have a deep love for learning new programming language and new framework and new trend that 
           I interested and I strive to bring innovation and creativity into everything I do. </p>
       </motion.div>
+
       <motion.div  
         className='w-[90%] min-[770px]:w-[50%] mt-4 border-b border-[#A91D3A]/30'
         initial="hidden"
@@ -78,6 +131,7 @@ export default function Page() {
           I will push myself to continually learn and grow.
         </p>
       </motion.div>
+
       <motion.div 
         className='w-[90%] min-[770px]:w-[50%] mt-4 border-b border-[#A91D3A]/30'
         initial="hidden"
@@ -89,6 +143,7 @@ export default function Page() {
           To me, every day is an opportunity to learn something new, to be better than I was yesterday, and to contribute positively to the world around me. 
         </p>
       </motion.div>
+
       <motion.div 
         className='w-[90%] min-[770px]:w-[50%] mt-4 border-b border-[#A91D3A]/30'
         initial="hidden"
@@ -111,6 +166,7 @@ export default function Page() {
           </div>
         </div>
       </motion.div>
+
       <motion.div 
         className='w-[90%] min-[770px]:w-[50%] mt-4 border-b border-[#A91D3A]/30'
         initial="hidden"
@@ -120,6 +176,7 @@ export default function Page() {
         <p className='font-bold text-xl'>My Work Experience</p>
         <Timeline timelineData={timelineData}/>
       </motion.div>    
+
       <motion.div 
         className='w-[90%] min-[770px]:w-[50%] mt-4 border-b border-[#A91D3A]/30'
         initial="hidden"
@@ -256,14 +313,27 @@ export default function Page() {
           </div>
         </LabeledContainer>
       </motion.div> 
+      
       <motion.div 
-        className='w-[90%] min-[770px]:w-[50%] mt-4 border-b border-[#A91D3A]/30'
+        className='w-[90%] min-[770px]:w-[50%] mt-4'
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
       >
         <p className='font-bold text-xl'>My Projects</p>
-        <p className='my-2'></p>
+        {
+          myProject.map((data, idx) => (
+            <LabeledContainer key={idx} cardTitle={data.copanyName}>
+              <div  className='flex flex-col py-5'>
+                <p className='font-semibold text-lg'>{data.projectName}</p>
+                <p className='font-semibold text-base mt-3'>About Project</p>
+                <p>{data.projectDetail}</p>
+                <p className='font-semibold text-base mt-3'>My Responsibility</p>
+                {data.myResponsibility?.map((responsibility,idx) => <li key={idx}>{responsibility}</li>)}            
+              </div>
+            </LabeledContainer>
+          ))
+        }
       </motion.div>     
     </div>
   )
