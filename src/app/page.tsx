@@ -2,10 +2,16 @@
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <div className="flex px-3 flex-col h-[100%] justify-center items-center">
+    <motion.div 
+      className="flex px-3 flex-col h-[100%] justify-center items-center"
+      initial="hidden"
+      whileInView="visible"
+      variants={{hidden: { opacity: 0, y: 20 },visible: { opacity: 1, y: 0, transition: { duration: 2 } }}}
+    >
       <TypeAnimation
         sequence={[          
           "",
@@ -27,6 +33,6 @@ export default function Home() {
           <FaLinkedin size={36}/>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 }
