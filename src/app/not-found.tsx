@@ -8,7 +8,7 @@ export default function NotFound() {
         className="flex flex-col h-[100%] md:flex-row items-center justify-center md:space-x-6"
         initial="hidden"
         animate="visible"
-        variants={{hidden: { opacity: 0, y: 20 },visible: { opacity: 1, y: 0, transition: { duration:1.5 } }}}
+        variants={{hidden: { opacity: 0, y: 20 },visible: { opacity: 1, y: 0, transition: { duration:1} }}}
     >
       <div className="space-x-2 pb-8 pt-6 md:space-y-5">
         <h1 className="text-6xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:border-r-2 md:px-6 md:text-8xl md:leading-14">

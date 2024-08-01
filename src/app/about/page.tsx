@@ -188,27 +188,27 @@ export default function Page() {
           <div className='grid grid-cols-2 2xl:grid-cols-4 gap-5 py-5'>
             <div className='flex flex-col items-center justify-end'>
               <img src={'python.png'} alt="Python" width={70}/>
-              <p className='font-semibold'>Python</p>
+              <p className='font-semibold text-[#333]'>Python</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'java.png'} alt="Java" width={70}/>
-              <p className='font-semibold'>Java</p>
+              <p className='font-semibold text-[#333]'>Java</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'c-sharp.png'} alt="C#" width={70}/>
-              <p className='font-semibold'>C#</p>
+              <p className='font-semibold text-[#333]'>C#</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'js.png'} alt="Javascript" width={70}/>
-              <p className='font-semibold'>Javascript</p>
+              <p className='font-semibold text-[#333]'>Javascript</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'dart.png'} alt="Dart" width={70}/>
-              <p className='font-semibold'>Dart</p>
+              <p className='font-semibold text-[#333]'>Dart</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'golang.png'} alt="go" width={70}/>
-              <p className='font-semibold'>Go</p>
+              <p className='font-semibold text-[#333]'>Go</p>
             </div>
           </div>
         </LabeledContainer>
@@ -216,23 +216,23 @@ export default function Page() {
           <div className='grid grid-cols-2 2xl:grid-cols-4 gap-5 py-5'>
             <div className='flex flex-col items-center justify-end'>
               <img src={'react.webp'} alt="React.js" width={70}/>
-              <p className='font-semibold'>React.js</p>
+              <p className='font-semibold text-[#333]'>React.js</p>
             </div>                                                               
             <div className='flex flex-col items-center justify-end'>
               <img src={'next.png'} alt="Next.js" width={70}/>
-              <p className='font-semibold'>Next.js</p>
+              <p className='font-semibold text-[#333]'>Next.js</p>
             </div> 
             <div className='flex flex-col items-center justify-end'>
               <img src={'angular.png'} alt="Angular.js" width={70}/>
-              <p className='font-semibold'>Angular.js</p>
+              <p className='font-semibold text-[#333]'>Angular.js</p>
             </div>                          
             <div className='flex flex-col items-center justify-end'>
               <img src={'xamarin.png'} alt="Xamarin" width={70}/>
-              <p className='font-semibold'>Xamarin</p>
+              <p className='font-semibold text-[#333]'>Xamarin</p>
             </div>                          
             <div className='flex flex-col items-center justify-end'>
               <img src={'flutter.png'} alt="Flutter" width={70}/>
-              <p className='font-semibold'>Flutter</p>
+              <p className='font-semibold text-[#333]'>Flutter</p>
             </div>                                                 
           </div>
         </LabeledContainer>
@@ -240,19 +240,19 @@ export default function Page() {
           <div className='grid grid-cols-2 2xl:grid-cols-4 gap-5 py-5'>
             <div className='flex flex-col items-center justify-end'>
               <img src={'dotnet.png'} alt="dotnet" width={70}/>
-              <p className='font-semibold'>.Net</p>
+              <p className='font-semibold text-[#333]'>.Net</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'spring.png'} alt="Spring Boot" width={70}/>
-              <p className='font-semibold'>Spring Boot</p>
+              <p className='font-semibold text-[#333]'>Spring Boot</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'express.png'} alt="Express.JS" width={70}/>
-              <p className='font-semibold'>Express.JS</p>
+              <p className='font-semibold text-[#333]'>Express.JS</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'flask.png'} alt="Flask" width={70}/>
-              <p className='font-semibold'>Flask</p>
+              <p className='font-semibold text-[#333]'>Flask</p>
             </div>
           </div>
         </LabeledContainer>
@@ -260,23 +260,23 @@ export default function Page() {
           <div className='grid grid-cols-2 2xl:grid-cols-4 gap-5 py-5'>
             <div className='flex flex-col items-center justify-end'>
               <img src={'mssql.png'} alt="mssql" width={70}/>
-              <p className='font-semibold'>MS SQL Server</p>
+              <p className='font-semibold text-[#333]'>MS SQL Server</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'postgres.svg'} alt="postgres" width={70}/>
-              <p className='font-semibold'>PostgreSQL</p>
+              <p className='font-semibold text-[#333]'>PostgreSQL</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'mongo.svg'} alt="mongo" width={70}/>
-              <p className='font-semibold'>MongoDB</p>
+              <p className='font-semibold text-[#333]'>MongoDB</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'firestore.png'} alt="FireStore" width={70}/>
-              <p className='font-semibold'>FireStore</p>
+              <p className='font-semibold text-[#333]'>FireStore</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'googlestorage.png'} alt="gstorage" width={70}/>
-              <p className='font-semibold'>Google Storage</p>
+              <p className='font-semibold text-[#333]'>Google Storage</p>
             </div>
           </div>
         </LabeledContainer>
@@ -284,31 +284,31 @@ export default function Page() {
           <div className='grid grid-cols-2 2xl:grid-cols-4 gap-5 py-5'>
             <div className='flex flex-col items-center justify-end'>
               <img src={'confluence.png'} alt="confluence" width={70}/>
-              <p className='font-semibold'>Confluence</p>
+              <p className='font-semibold text-[#333]'>Confluence</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'docker.svg'} alt="docker" width={70}/>
-              <p className='font-semibold'>docker</p>
+              <p className='font-semibold text-[#333]'>docker</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'git.svg'} alt="git" width={70}/>
-              <p className='font-semibold'>Git</p>
+              <p className='font-semibold text-[#333]'>Git</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'jira.svg'} alt="jira" width={70}/>
-              <p className='font-semibold'>Jira</p>
+              <p className='font-semibold text-[#333]'>Jira</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'mermaid.svg'} alt="mermaid" width={70}/>
-              <p className='font-semibold'>Mermaid</p>
+              <p className='font-semibold text-[#333]'>Mermaid</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'rabbitmq.svg'} alt="rabbitmq" width={70}/>
-              <p className='font-semibold'>RabbitMQ</p>
+              <p className='font-semibold text-[#333]'>RabbitMQ</p>
             </div>
             <div className='flex flex-col items-center justify-end'>
               <img src={'datadog.svg'} alt="datadog" width={70}/>
-              <p className='font-semibold'>Datadog</p>
+              <p className='font-semibold text-[#333]'>Datadog</p>
             </div>
           </div>
         </LabeledContainer>
@@ -320,16 +320,16 @@ export default function Page() {
         whileInView="visible"
         variants={containerVariants}
       >
-        <p className='font-bold text-xl'>My Projects</p>
+        <div className='font-bold text-xl'>My Projects</div>
         {
           myProject.map((data, idx) => (
             <LabeledContainer key={idx} cardTitle={data.copanyName}>
               <div  className='flex flex-col py-5'>
-                <p className='font-semibold text-lg'>{data.projectName}</p>
-                <p className='font-semibold text-base mt-3'>About Project</p>
-                <p>{data.projectDetail}</p>
-                <p className='font-semibold text-base mt-3'>My Responsibility</p>
-                {data.myResponsibility?.map((responsibility,idx) => <li key={idx}>{responsibility}</li>)}            
+                <p className='font-semibold text-lg text-[#333]'>{data.projectName}</p>
+                <p className='font-semibold text-base mt-3 text-[#333]'>About Project</p>
+                <p className='text-[#333]'>{data.projectDetail}</p>
+                <p className='font-semibold text-base mt-3 text-[#333]'>My Responsibility</p>
+                {data.myResponsibility?.map((responsibility,idx) => <li className='text-[#333]' key={idx}>{responsibility}</li>)}            
               </div>
             </LabeledContainer>
           ))
